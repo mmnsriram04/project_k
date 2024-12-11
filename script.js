@@ -32,6 +32,8 @@ if (typeof emailjs === "undefined") {
                 alert("Email sent successfully!");
                 // Clear form fields
                 document.getElementById('contactForm').reset();
+                // Redirect to homepage after email is sent
+                window.location.href = "homepage.html";
             },
             function (error) {
                 console.error("FAILED...", error);
